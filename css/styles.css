@@ -118,6 +118,11 @@ header > .container {
   text-align: center;
 }
 
+.nav-link:hover {
+  text-decoration-line: underline;
+  color: #ffc41e;
+}
+
 .nav-list {
   margin-right: 90px;
 }
@@ -163,6 +168,19 @@ header > .container {
   line-height: 1.35;
 }
 
+.small-arrow {
+  fill: currentColor;
+}
+
+.hero-link span {
+  padding-left: 10px;
+}
+
+.hero-link:hover {
+  text-decoration-line: underline;
+  color: #ffc41e;
+}
+
 .hero-right {
   width: 540px;
   padding-top: 120px;
@@ -203,6 +221,15 @@ header > .container {
   font-family: inherit;
   font-size: 14px;
   line-height: 1.35;
+}
+
+.color-link span {
+  padding-left: 10px;
+}
+
+.color-link:hover {
+  text-decoration-line: underline;
+  color: #ffc41e;
 }
 
 .blue {
