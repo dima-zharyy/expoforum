@@ -401,8 +401,8 @@ header > .container {
   align-items: center;
 }
 
-.container.news img {
-  display: block;
+.left-cont {
+  margin-right: 125px;
 }
 
 .news-left-item:first-child {
@@ -440,4 +440,32 @@ header > .container {
 
 .news-right-item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.right-cont-title {
+  margin-bottom: 30px;
+}
+
+.news-thumb {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+}
+
+.news-right-date {
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  line-height: 1.35;
+  color: var(--expo-color);
+}
+
+.news-right-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.3;
+
+  letter-spacing: -0.01em;
+  color: var(--secondary-text-color);
 }
