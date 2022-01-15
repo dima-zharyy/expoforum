@@ -30,7 +30,7 @@
             /></a>
             <ul class="nav-list">
               <li class="nav-item">
-                <a class="nav-link" href="">О комплексе</a>
+                <a class="nav-link" href="./button.html">О комплексе</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="">О компании</a>
@@ -66,6 +66,7 @@
                 </svg>
               </span>
             </a>
+            <button class="button-open" data-modal-open>Open modal window</button>
           </div>
           <div class="hero-right">
             <ul class="color-list">
@@ -381,5 +382,11 @@
         </div>
       </div>
     </section>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal" data-modal>
+        <button class="button-close" type="button" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
