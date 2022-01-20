@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid tomato;
-}
+} */
 
 :root {
   --primary-text-color: #ffffff;
@@ -76,7 +76,11 @@ a {
 .h-h-back {
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.8);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
     url(../images/bgc.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -569,4 +573,79 @@ header > .container {
   height: 30px;
   border: 2px solid black;
   border-radius: 50%;
+}
+
+.form-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-label {
+  display: block;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.form-field {
+  display: block;
+  padding: 0;
+}
+
+.form-fieldset {
+  color: #000;
+}
+
+.submit-btn {
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: block;
+  background-color: teal;
+}
+
+.radio-label {
+  margin-right: 10px;
+}
+
+.icon-radio {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 2px;
+  background-color: tomato;
+  transform: translateY(5px);
+  border-radius: 50%;
+}
+
+.icon-radio::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  height: 7px;
+  display: block;
+  background-color: tomato;
+  border-radius: 50%;
+  transition: background-color 500ms linear;
+}
+
+.form-check:checked + .icon-radio::after {
+  background-color: white;
+}
+
+.form-check:focus + .icon-radio {
+  border: 2px solid #000;
 }

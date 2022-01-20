@@ -24,5 +24,52 @@
     <div class="button" width="600" height="300">
       <button class="btn" type="button">Наведи на меня мышку</button>
     </div>
+    <div class="form-container">
+      <form class="form">
+        <label class="form-label">
+          Name
+          <input type="text" name="username" class="form-field" required />
+        </label>
+        <label class="form-label">
+          Email
+          <input type="email" name="email" class="form-field" required />
+        </label>
+        <label class="form-label">
+          Phone number
+          <input type="tel" name="tel" class="form-field" required />
+        </label>
+        <fieldset class="form-fieldset">
+          <legend class="form-legend">Choose your gender</legend>
+          <label class="radio-label"
+            >Male</span
+            ><input
+              class="form-check visually-hidden"
+              type="radio"
+              name="gender"
+              id=""
+              value="male"
+          /> <span class="icon-radio"></span></label>
+          <label class="radio-label"
+            >Female</span
+            ><input
+              class="form-check visually-hidden"
+              type="radio"
+              name="gender"
+              id=""
+              value="female"
+          /><span class="icon-radio"></label>
+          <label class="radio-label"
+            >both</span
+            ><input
+              class="form-check visually-hidden"
+              type="radio"
+              name="gender"
+              id=""
+              value="both"
+          /><span class="icon-radio"></label>
+        </fieldset>
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
