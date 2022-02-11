@@ -1,0 +1,119 @@
+.container {
+  background-color: aqua;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    'header'
+    'nav'
+    'hero'
+    'hero'
+    'hero'
+    'main'
+    'main'
+    'main'
+    'banner'
+    'banner'
+    'footer'
+    'footer'
+    'subscribe';
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-areas:
+      'header header header header'
+      'hero hero hero hero'
+      'hero hero hero hero'
+      'hero hero hero hero'
+      'hero hero hero hero'
+      'nav main main main'
+      'nav main main main'
+      'nav main main main'
+      'nav main main main'
+      'nav banner banner banner'
+      'nav banner banner banner'
+      'nav banner banner banner'
+      'nav footer footer subscribe';
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    grid-template-areas:
+      'header nav nav nav'
+      'hero hero hero hero'
+      'hero hero hero hero'
+      'hero hero hero hero'
+      'hero hero hero hero'
+      'hero hero hero hero'
+      'hero hero hero hero'
+      'hero hero hero hero'
+      'main main . subscribe'
+      'main main . subscribe'
+      'main main . footer'
+      'main main . footer'
+      'banner banner banner banner';
+  }
+}
+
+.header {
+  grid-area: header;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  grid-area: hero;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  grid-area: main;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  grid-area: banner;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe {
+  grid-area: subscribe;
+  background-color: royalblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

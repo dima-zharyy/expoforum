@@ -649,3 +649,34 @@ header > .container {
 .form-check:focus + .icon-radio {
   border: 2px solid #000;
 }
+
+/* Swiper slide */
+.swiper-slide {
+  width: 200px;
+  height: 100px;
+}
+
+.slide .first {
+  background-image: url(../images/news1.png);
+}
+
+.slide .second {
+  background-image: url(../images/news1.png);
+}
+
+.slide .third {
+  background-image: url(../images/news1.png);
+}
+
+.slide .fourth {
+  background-image: url(../images/news1.png);
+}
+
+.slide .fifth {
+  background-image: url(../images/news1.png);
+}
+
+.slide .sixth {
+  background-image: url(../images/news1.png);
+  -color: ;
+}

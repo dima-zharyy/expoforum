@@ -18,12 +18,45 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="button" width="600" height="300">
       <button class="btn" type="button">Наведи на меня мышку</button>
     </div>
+
+    <div class="container">
+       <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/exp1.png" alt="">
+        </div>
+        
+        <div class="swiper-slide second">
+          <img src="./images/exp2.png" alt="">
+        </div> 
+        <div class="swiper-slide third">
+          <img src="./images/exp3.png" alt="">
+        </div>
+        <div class="swiper-slide fourth">
+          <img src="./images/exp4.png" alt="">
+        </div>
+        <div class="swiper-slide fifth">
+          <img src="./images/exp5.png" alt="">
+        </div>
+        <div class="swiper-slide sixth">
+          <img src="./images/exp6.png" alt="">
+        </div>
+             </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    </div>
+
+    <!-- Форма отправки -->
     <div class="form-container">
       <form class="form">
         <label class="form-label">
@@ -71,5 +104,31 @@
         <button class="submit-btn" type="submit">Submit</button>
       </form>
     </div>
+
+    <button type="button">Google-</button>
+
+    <button type="button">App store</button>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
